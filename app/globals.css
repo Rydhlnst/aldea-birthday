@@ -213,4 +213,24 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+
+  ::-webkit-scrollbar {
+    width: 12px; /* Lebar scrollbar vertikal */
+    height: 12px; /* Tinggi scrollbar horizontal */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Background jalur */
+    border-radius: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #ff6b6b; /* Warna thumb */
+    border-radius: 8px;
+    border: 3px solid #f0f0f0; /* Ruang di sekitar thumb */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #ff3b3b; /* Warna saat hover */
+  }
 }
