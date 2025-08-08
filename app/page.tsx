@@ -1,103 +1,80 @@
-import Image from "next/image";
+ 
+"use client"
 
-export default function Home() {
+import { useEffect, useState } from "react"
+import LoadingOverlay from "@/components/layout/LoadingOverlay"
+import LockedScreen from "@/components/layout/LockedScreen"
+import { HeroParallaxDemo } from "@/components/layout/MemoryGallery"
+import QuizPage from "@/components/layout/QuestionPage"
+import EyePage from "@/components/EyePage"
+import CarouselForNaila from "@/components/layout/CarouselForNaila"
+import WishesFromMe from "@/components/layout/WishesFromMe"
+import FunFactKanbanCarousel from "@/components/layout/FunFactAboutNaila"
+import HeroSection from "@/components/layout/HeroSection"
+import BrutalismPassword from "@/components/layout/PasswordPage"
+
+export default function LandingPage() {
+  const [isLoading, setIsLoading] = useState(true)
+  const [canAccess, setCanAccess] = useState(false)
+  const [quizPassed, setQuizPassed] = useState(false) 
+
+
+  // Simulasi loading & akses
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false)
+
+      const now = new Date()
+      const targetDate = new Date("2025-08-09T00:00:00")
+      if (now >= targetDate) setCanAccess(true)
+    }, 5000)
+
+    return () => clearTimeout(timer)
+  }, [])
+
+  // Jika masih loading
+  if (isLoading) return <LoadingOverlay />
+
+  if(!canAccess) return <LockedScreen/>
+
+  // Jika belum lolos quiz
+  if (!quizPassed) return <QuizPage onSuccess={() => setQuizPassed(true)} />
+
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="min-h-screen overflow-hidden">
+      
+      <section className="min-h-screen">
+        <HeroSection />
+      </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+      <section className="min-h-screen" id="gallery">
+        <HeroParallaxDemo />
+      </section>
+
+      <section className="h-full min-h-screen">
+        <CarouselForNaila />
+      </section>
+
+      <section className="h-full min-h-screen" id="funfacts">
+        <FunFactKanbanCarousel />
+      </section>
+
+      <section className="min-h-screen md:min-h-min h-full" id="wish">
+        <WishesFromMe />
+      </section>
+
+      <section className="min-h-screen h-full">
+        <EyePage />
+      </section>
+
+      <section className="min-h-screen h-full">
+        <BrutalismPassword />
+      </section>
+
+      {/* <section className="h-screen relative border-y-4 border-b">
+        <DiagonalBanner degree={93} top="170%" left="12.3%" className='hidden lg:block'/>
+      </section> */}
+
+    </main>
+  )
 }
