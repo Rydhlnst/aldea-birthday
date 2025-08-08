@@ -9,7 +9,7 @@ import Image from "next/image"
 import Confetti from "react-confetti" // Library untuk efek confetti
 
 // Passwordnya adalah nama dari gaya desain ini
-const CLUE_PASSWORD = "kunci roblox tawa 31 oktober"
+const CLUE_PASSWORD = "KUNCI ROBLOX TAWA 31 OKTOBER"
 
 export default function BrutalismPassword() {
   const [input, setInput] = useState("")

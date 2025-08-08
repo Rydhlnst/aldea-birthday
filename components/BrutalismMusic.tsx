@@ -24,22 +24,39 @@ function useMediaQuery(query: string) {
 export default function BrutalismMusicButton() {
   const [isOpen, setIsOpen] = useState(false);
   const [isPlaying, setIsPlaying] = useState(true); // Mulai dengan true untuk autoplay
+  const [hasStarted, setHasStarted] = useState(false);
   const isMobile = useMediaQuery("(max-width: 768px)");
 
-  // Autoplay saat komponen dimount
+  // Autoplay saat komponen dimount dengan delay untuk mengatasi browser restrictions
   useEffect(() => {
-    // Set autoplay setelah komponen dimount
-    setIsPlaying(true);
-  }, []);
+    const timer = setTimeout(() => {
+      if (!hasStarted) {
+        setIsPlaying(true);
+        setHasStarted(true);
+      }
+    }, 100);
+    return () => clearTimeout(timer);
+  }, [hasStarted]);
 
   const handlePlayPause = () => {
     setIsPlaying(!isPlaying);
+    if (!hasStarted) {
+      setHasStarted(true);
+    }
   };
 
   const handleClose = () => {
     // Tutup player tapi jangan hentikan musik
     setIsOpen(false);
     // Musik tetap berjalan (isPlaying tetap true jika sedang play)
+  };
+
+  const handleOpenPlayer = () => {
+    setIsOpen(true);
+    if (!hasStarted) {
+      setHasStarted(true);
+      setIsPlaying(true);
+    }
   };
 
   return (
@@ -50,7 +67,7 @@ export default function BrutalismMusicButton() {
     >
       {/* AudioCarousel selalu dirender agar musik tetap jalan - tersembunyi */}
       <div className="pointer-events-none fixed bottom-0 left-0 w-0 h-0 overflow-hidden opacity-0">
-        <AudioCarousel isPlaying={isPlaying} />
+        <AudioCarousel isPlaying={isPlaying && hasStarted} />
       </div>
 
       {/* Kontainer Button + Player */}
@@ -72,12 +89,12 @@ export default function BrutalismMusicButton() {
         {/* Tombol awal - Tambahkan indikator jika sedang playing */}
         {!isOpen && (
           <button
-            onClick={() => setIsOpen(true)}
+            onClick={handleOpenPlayer}
             className="w-full h-full flex items-center justify-center hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition relative"
           >
             <Music2 size={28} className="text-black" />
             {/* Indikator musik sedang playing */}
-            {isPlaying && (
+            {isPlaying && hasStarted && (
               <motion.div
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ repeat: Infinity, duration: 1 }}
@@ -125,9 +142,30 @@ export default function BrutalismMusicButton() {
                 </Button>
               </div>
 
-              {/* Audio Carousel - Hanya untuk tampilan UI */}
+              {/* Audio Carousel - Hanya untuk tampilan UI, tapi disable audio */}
               <div className="flex-1 flex items-center justify-center px-2">
-                <AudioCarousel isPlaying={isPlaying} />
+                {/* Tampilkan visual saja, audio dihandle oleh yang tersembunyi */}
+                <div className="relative w-full max-w-sm md:max-w-sm sm:max-w-full mx-auto flex flex-col items-center">
+                  <div className="border-4 border-black shadow-[6px_6px_0px_black] bg-red-400 w-full sm:w-[260px] md:w-[340px] p-4">
+                    <h3 className="text-black text-base md:text-lg font-bold tracking-tight text-center mb-4">
+                      Current Song
+                    </h3>
+                    <div className="w-full bg-gray-200 border-2 border-black h-10 md:h-12 rounded flex items-center justify-center">
+                      <div className="flex items-center gap-2">
+                        {isPlaying ? (
+                          <>
+                            <div className="w-1 h-4 bg-green-500 animate-pulse"></div>
+                            <div className="w-1 h-6 bg-green-500 animate-pulse delay-100"></div>
+                            <div className="w-1 h-3 bg-green-500 animate-pulse delay-200"></div>
+                            <span className="text-xs font-bold">Playing...</span>
+                          </>
+                        ) : (
+                          <span className="text-xs font-bold">Paused</span>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               {/* Kontrol */}
@@ -149,7 +187,7 @@ export default function BrutalismMusicButton() {
       </motion.div>
 
       {/* Mini player saat ditutup - hanya tampil jika sedang playing */}
-      {!isOpen && isPlaying && (
+      {!isOpen && isPlaying && hasStarted && (
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
