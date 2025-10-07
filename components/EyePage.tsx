@@ -6,7 +6,7 @@ import Image from 'next/image'
 const messages = [
   { id: 1, text: "HAHAHA, ya udah sampai sini aja ya. Pesannya singkat sih, tapi coba kamu geser-geser kartunya, aku jujur aja, ini tipis-tipis banget akwkwwk." },
   { id: 2, text: "UMMMMMMMMMMMMMMMMMM" },
-  { id: 3, text: "Karena itu juga, aku pengen banget dekat lagi sama kamu." },
+  { id: 3, text: "SEBENARNYA DARI LAMA NIH, aku pengen banget dekat lagi sama kamu. Cuman gatauu dahh takut ganggu hubunganmu sih." },
   { id: 4, text: "Semoga kamu nggak keberatan yaa. MISALNYA aku ada gamon dikit? ga sihh jangan gitu" },
   { id: 5, text: "Ya, dan terakhirr kek tadi aku bilang 'Ternyata aku salahh' karena aku sering merhatiin repostanmu sihh, sebenarnya yaa aku hanya pengen coba validasi hasil temuan akuu dengan nanyai funfactmu AWOKWKWKKW dahla marah keknya ini, tapii kau tau pasti aku sering liat repostanmu dulunyaa" },
 ]
