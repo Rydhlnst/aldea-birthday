@@ -12,30 +12,30 @@ import {
 } from "@/components/ui/carousel"
 
 const funFacts = [
-  "Ternyataa naila suka dengeri laguu, tapi gatauu judulnyaa, lucuu dehh",
-  "Suka banget ama kucingggg",
-  "Hobii makann, kalau stress ataupun ngantukk pasti mau makan jadinyaa",
-  "Nailaa pasti suka ama yang rapii, yakannnnnn",
-  "Katanya lebih milih matii karena kedinginan dibanding matii kepanasann",
-  "Suka ngevideoii hal kecil apapun ituu, yaa moga aja kita bisa ngevideoi bareng juga kapann2",
-  "Ternyata warna favnyaa, warna yang dapat bikin terang kulit... aku salah nangkap selama inii",
-  "Ngakuu ngaku si paling tahan pedess",
-  "Kalau scroll tiktokk udah ga tauu apa2 lagi ama sekitarnyaa",
-  "Orang yang lebih sukaa jasmine tea dibandingkan matchaa",
-  "Suka coklat jugaa",
-  "Kalau gabut bawaannya masakk",
-  "Seneng kalau bisa ngerjaii soal matematikaa, umm nantii kita akan duel yaaa hwehwhehwe",
-  "Gasukaa orang lain kalau ngumpul malah main HP",
-  "Nampaknyaa pecinta garis keras Billie Ellish",
-  "Suka PUMA Red xD",
-  "Cupuu main roblox AOWKKWKWKKWKWKK",
-  "Suka tiba tiba ketidurann, orang dah nunggui yaa padahall",
-  "Aku rasa kamuu juga hobi cobaa style make-upp",
-  "Naila lucuu",
-  "Naila juga cantikk",
-  "Menurutkuu kamu juga manis AOWKKWKWKWKKW",
-  "Tapii kamu parah sih, sering ngebalas 1 hari sekali hikss",
-  "Ummmmmmmmmm, tapi aku rasaa aku masih kurang mengenalmu dehh, aku harap aku bisa mengenalmu lebih dalamm",
+  "SUKA PAP RANDOM GATAUU KENAPAA? tapi gapapa sih aku seneng2 ajaa",
+  "anak akuntan",
+  "Hobii jajann sih ini seharusnya yaa",
+  "Aldeaa suka orang tinggi seharusnyaa, gatau yang sekarang",
+  "Keknya suka Jude Bellingham, maaf kalau nebak",
+  "Pnya ambisi yang geedee, buktinya bisa KL YES dia 23/24 laluu cie cie cie ciee",
+  "warna favmuu apaan de? aku lupaa hmmmm, bilang aja biru moga benarr",
+  "ada marga nasution",
+  "sipit kek cina, kaga juga sihh tapi sipit",
+  "tinggal di mencirim xD",
+  "Suka dimsum yakann, kalau suka yang lain sih aku dah gatauu",
+  "punya mantan ganteng namanya Riyadhul, maaf kepedean",
+  "suka matematika tapi gasuka akuntansi? apa karena pembukuan??",
+  "suka kating.",
+  "aku gatau lagi suka dengeri lagu apaan? tapi yang aku taumah sekarang hindia yaa? dulu 1D, sisanya gatau dahh",
+  "ngeghosting aku",
+  "suka maksa",
+  "gila kegiatan organisasi",
+  "ntah gatau isi apaa ummm, username 2nd ignya deezdey",
+  "Aldea lucuu",
+  "Aldea juga cantikk",
+  "Menurutkuu kamu juga manis AOWKKWKWKWKKW, tapi gausah baper",
+  "suka buat orang bingung",
+  "sejujurnya aku gatau banyak hal baru darimu sih de, soalnya dikit kali yang kamu ceritaii, jadinya makan ini",
 ]
 
 const brutalistColors = [
@@ -64,7 +64,7 @@ export default function FunFactKanbanCarousel() {
                 </span>
                 about
                 <span className="bg-emerald-400 text-black px-3 py-1 ml-2 sm:ml-3 border-4 border-black shadow-[4px_4px_0px_black] transform rotate-1 inline-block">
-                Naila
+                Aldeaa
                 </span>
             </h1>
         </Card>

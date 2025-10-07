@@ -9,7 +9,7 @@ import Image from "next/image"
 import Confetti from "react-confetti" // Library untuk efek confetti
 
 // Passwordnya adalah nama dari gaya desain ini
-const CLUE_PASSWORD = "KUNCI ROBLOX TAWA 31 OKTOBER"
+const CLUE_PASSWORD = "KUNCI SATE TAICHAN TAWA 31 OKTOBER"
 
 export default function BrutalismPassword() {
   const [input, setInput] = useState("")
@@ -42,7 +42,7 @@ export default function BrutalismPassword() {
       {/* --- Clue Section yang lebih interaktif --- */}
       <div className="max-w-xl text-center font-mono text-sm sm:text-base leading-relaxed text-gray-800 select-none z-10">
         <p className="bg-white/80 backdrop-blur-sm p-4 border-2 border-dashed border-gray-400">
-          Hai Naila! Clue untuk jawaban ini ada di halaman website inii lhoo, coba kamu carii
+          Hai Aldea! Clue untuk jawaban ini ada di halaman website inii lhoo, coba kamu carii
           <br />
           <span className="font-bold mt-2 block">Kira-kira, apa saja gabungan katanyaa? dan ditambahh ama tanggal lahirkuu {"(kata kata kata tanggal lahir bulan lahir)"} dah yaa dah cukup, gampang sih iniii, aku gamau kamu kesusahan wlee</span>
         </p>
@@ -107,7 +107,7 @@ export default function BrutalismPassword() {
           <CardContent className="text-center text-lg font-semibold space-y-4">
             <p>
               Kamu berhasil! Jawabannya adalah  <span className="bg-green-400 text-black px-3 py-1 border-4 border-black shadow-[4px_4px_0px_black] transform -rotate-1 inline-block">
-                kunci roblox tawa 31 oktober
+                kunci sate taichan tawa 31 oktober
                 </span>
             </p>
             <Button

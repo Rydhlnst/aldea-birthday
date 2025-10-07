@@ -28,7 +28,7 @@ const NavbarBirthday = () => {
         {/* Center: Brand Title */}
         <h1 className="text-xl md:text-3xl font-extrabold uppercase tracking-tight text-black flex items-center gap-2 col-span-2">
             <span className="bg-yellow-400 text-black px-2 py-1 border-4 mr-3 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform rotate-5 inline-block">
-            Naila&apos;s</span> Day
+            Aldea&apos;s</span> Day
         </h1>
 
         {/* Right Side: Actions */}

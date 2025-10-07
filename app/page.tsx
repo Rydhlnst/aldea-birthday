@@ -7,11 +7,11 @@ import LockedScreen from "@/components/layout/LockedScreen"
 import { HeroParallaxDemo } from "@/components/layout/MemoryGallery"
 import QuizPage from "@/components/layout/QuestionPage"
 import EyePage from "@/components/EyePage"
-import CarouselForNaila from "@/components/layout/CarouselForNaila"
 import WishesFromMe from "@/components/layout/WishesFromMe"
-import FunFactKanbanCarousel from "@/components/layout/FunFactAboutNaila"
 import HeroSection from "@/components/layout/HeroSection"
 import BrutalismPassword from "@/components/layout/PasswordPage"
+import CarouselForAldea from "@/components/layout/CarouselForAldea"
+import FunFactKanbanCarousel from "@/components/layout/FunFactAboutAldea"
 
 export default function LandingPage() {
   const [isLoading, setIsLoading] = useState(true)
@@ -25,7 +25,7 @@ export default function LandingPage() {
       setIsLoading(false)
 
       const now = new Date()
-      const targetDate = new Date("2025-08-09T00:00:00")
+      const targetDate = new Date("2025-10-07T00:00:00")
       if (now >= targetDate) setCanAccess(true)
     }, 5000)
 
@@ -52,7 +52,7 @@ export default function LandingPage() {
       </section>
 
       <section className="h-full min-h-screen">
-        <CarouselForNaila />
+        <CarouselForAldea />
       </section>
 
       <section className="h-full min-h-screen" id="funfacts">

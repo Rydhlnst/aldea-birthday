@@ -108,13 +108,13 @@ export const Header = () => {
           </span>
          <br /> 
             <span className="bg-yellow-400 -rotate-2 text-black px-2 py-1 border-4 mr-3 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transform inline-block">
-              Kenangan Tersimpan
+              Kenangan Tersimpan di 2023+
             </span>
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-        Sedih gaa kamuu? kita belum ada kenangan bareng sama sekalii hadehh, palingan <span className="bg-purple-400 text-black px-3 py-1 mx-1 border-4 border-black shadow-[4px_4px_0px_black] transform -rotate-1 inline-block">
-                roblox
-                </span> sihh ummmmm apa perluu aku masuki roblox??? tapi aku maunyaa yang nyataa
+        Sedih gaa kau dee? kita belum ada kenangan bareng lagi, palingan <span className="bg-purple-400 text-black px-3 py-1 mx-1 border-4 border-black shadow-[4px_4px_0px_black] transform -rotate-1 inline-block">
+                sate taichan
+          </span> itupun gajelas yaa? awkkwkwk sorry yaa buat ituu
       </p>
     </div>
   );

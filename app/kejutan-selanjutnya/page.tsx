@@ -11,21 +11,23 @@ const KejutanPage = () => {
         <CardContent className="p-10">
           <p className="text-lg leading-relaxed font-medium text-gray-900 whitespace-pre-line">
             Hari inii <span className="bg-sky-500 text-white px-3 py-1 mx-1 border-4 border-black shadow-[4px_4px_0px_black] transform rotate-1 inline-block font-extrabold tracking-wide">
-              9 Agustus 2025
+              8 Oktober 2025
             </span>{' '}, merupakan hari yang spesial nihh buat siapa yaa, yaa kalau bukan{' '}
             <span className="bg-blue-400  px-3 py-1 mx-1 border-4 border-black shadow-[4px_4px_0px_black] transform -rotate-1 inline-block font-extrabold tracking-wider text-yellow-50">
-              Nailaa
+              Aldeaa
             </span>{' '}
             siapa lagii.
             <br />
-            Meski kita belum terlalu dekat, yaa karena kita baru deket sejak kapan yaa ummmmm{' '}
+            Meski kita belum terlalu dekat lagi, yaa karena kita baru deket lagi sejak kapan yaa ummmmm{' '}
             <span className="bg-purple-400 text-white px-3 py-1 mx-1 border-4 border-black shadow-[4px_4px_0px_black] transform rotate-2 inline-block font-semibold tracking-wide">
-              15 Juli
+              beberapa hari lalu yaa atau dah 2 mingguu?
             </span>
-            , dengg aku merasa kamu sosok yang istimewa dan selalu memberi warna{' '}
+            , dengg aku merasa kamu sosok yang istimewa selaluu dan selalu memberi warna{' '}
            <span className="bg-green-500 text-white px-3 py-1 mx-1 border-4 border-black shadow-[4px_4px_0px_black] transform rotate-1 inline-block font-extrabold tracking-wide">
               dalam hari harikuu
-            </span>{' '} hehehehehe, kesannya agak anehh sihh tapii, kehadiranmu bener bener memberikan semangat dan senyum tersendiri, dan aku sangat bersyukur bisa mengenalmu, hihihihihii.
+            </span>{' '} hehehehehe, kesannya agak anehh sihh tapii, kehadiranmu bener bener memberikan semangat dan senyum tersendiri, dan aku sangat bersyukur bisa ngobrol amamu lagii, hihihihihii. <span className='text-red-500'>
+              walaupun sekarang dah ada sukaa kating sih, dan aku juga gamau ganggu waktunyaa ya dee
+            </span>
             <br /><br />
 
             Di hari ulang tahunmu ini, aku berharap semua{' '}
@@ -61,19 +63,19 @@ const KejutanPage = () => {
             </span>{' '}
             dan penuh perhatian, yang selalu ngedengeri yappingan gajelas dari akuu.
             <br />
-            Semoga ke depannya, kita dapat terus saling mengenal lebih dalam, tumbuh bersama, dan dapat{' '}
+            Semoga ke depannya, kita dapat terus saling berkomunikasii tumbuh bersama, dan dapat{' '}
             <span className="bg-orange-400 text-black px-3 py-1 mx-1 border-4 border-black shadow-[4px_4px_0px_black] transform rotate-2 inline-block font-semibold">
               menciptakan
             </span>{' '}
-            kenangan-kenangan yang{' '}
+            kenangan-kenangan bareng yang{' '}
             <span className="bg-pink-300 text-black px-3 py-1 mx-1 border-4 border-black shadow-[4px_4px_0px_black] transform -rotate-1 inline-block font-semibold">
-              lucuu
+              lucuu lagi dah kalau bisaa
             </span>{' '}
             hehehehe. Dan jikaa kamu ingin butuh apapun ituu, mau dari mnta tolong bantuii kerjai <span className="bg-green-500 text-white px-3 py-1 mx-1 border-4 border-black shadow-[4px_4px_0px_black] transform rotate-1 inline-block font-extrabold tracking-wide">
-              tugasmuu
+              tugasmuu (&apos;AKU SELALU BISA BANTU&apos;)
             </span>{' '}, atau dengeri <span className="bg-orange-500 text-white px-3 py-1 mx-1 border-4 border-black shadow-[4px_4px_0px_black] transform rotate-1 inline-block font-extrabold tracking-wide">
-              curhatanmuu
-            </span>{' '} apapun itu dehh, aku selalu akan <span className="bg-pink-500 text-white px-3 py-1 mx-1 border-4 border-black shadow-[4px_4px_0px_black] transform rotate-1 inline-block font-extrabold tracking-wide">
+              curhatanmuu tntang
+            </span>{' '}  <span className='text-red-500 font-bold'>KATINGmuu</span> atau apapun itu dehh, aku selalu akan <span className="bg-pink-500 text-white px-3 py-1 mx-1 border-4 border-black shadow-[4px_4px_0px_black] transform rotate-1 inline-block font-extrabold tracking-wide">
               membantumuu
             </span>{' '}
             <br /><br />
@@ -82,10 +84,10 @@ const KejutanPage = () => {
             <span className="bg-green-500 text-white px-3 py-1 mx-1 border-4 border-black shadow-[4px_4px_0px_black] transform rotate-1 inline-block font-extrabold tracking-wide">
               19
             </span>{' '}
-            Nailaaa! Semoga hari ini dan seterusnya kamu selaluu bahagiaa, dan aku berharap kita akan selalu dekett. HIHIHIHIHI, gituu saja sih yang bisa aku ucapii, maaf yaa kalau kurang mengesankann
+            Aldeaaa! Semoga hari ini dan seterusnya kamu selaluu bahagiaa, dan aku berharap kita akan selalu dekett. HIHIHIHIHI, gituu saja sih yang bisa aku ucapii, maaf yaa kalau kurang mengesankann karena aku sampe sekarangg gabisa ngerangkai kataa2 yang bisa buat kamu kagum / sukaa juga?? yaa gituu dah.
             <br /><br />
 
-            Nikmati hari istimewamu naii, <span className="bg-sky-500 text-white px-3 py-1 mx-1 border-4 border-black shadow-[4px_4px_0px_black] transform rotate-1 inline-block font-extrabold tracking-wide">
+            Nikmati hari ultahmuu deee, <span className="bg-sky-500 text-white px-3 py-1 mx-1 border-4 border-black shadow-[4px_4px_0px_black] transform rotate-1 inline-block font-extrabold tracking-wide">
               You deserve this whole world!!
             </span>{' '}
           </p>

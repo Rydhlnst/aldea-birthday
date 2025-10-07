@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "For Nailaa",
+  title: "For Aldeaa",
   description: "Created by ur friendd, Riyan",
 };
 

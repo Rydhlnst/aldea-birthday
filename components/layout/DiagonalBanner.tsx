@@ -14,7 +14,7 @@ type DiagonalBannerProps = {
 }
 
 const DiagonalBanner = ({
-  items = ['HAPPY', 'BIRTHDAY', 'NAILA', 'FOR', '19S'],
+  items = ['HAPPY', 'BIRTHDAY', 'Aldea', 'FOR', '19S'],
   className = '',
   degree = -15,
   left = '50%',

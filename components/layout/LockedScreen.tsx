@@ -18,7 +18,7 @@ const noodleData = [
 
 const LockedScreen = () => {
   const calculateTimeLeft = () => {
-    const difference = +new Date('2025-08-09T00:00:00') - +new Date()
+    const difference = +new Date('2025-10-08T00:00:00') - +new Date()
     let timeLeft = {}
 
     if (difference > 0) {
@@ -125,7 +125,7 @@ const LockedScreen = () => {
             className="text-lg font-semibold mb-6"
             style={{ letterSpacing: '0.12em' }}
           >
-            Hang tight, <span className="underline decoration-black decoration-4">Nailaa</span>. Something big is coming.
+            Hang tight, <span className="underline decoration-black decoration-4">Aldeaa</span>. Something big is coming.
           </motion.p>
 
           <motion.div variants={itemVariants} className="mt-6">

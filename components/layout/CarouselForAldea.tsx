@@ -16,12 +16,12 @@ const specialThings = [
   {
     bgColor: "bg-green-300",
     title: "Your Voicee",
-    description: "Jujur2 aja yaa, saat aku denger suaramu langsung saat main roblox mount ituu, aku ketawa dikit awkwkkwkw, suaramu lucuu ajaa",
+    description: "HAHAHHAAH, sama ajaa sih sebenarnyaa, aku dari awal emangg masih suka suaramuu, walaupun kadang orang sanaa pernah bilang aneh suaranyaa.",
   },
   {
     bgColor: "bg-lime-300",
-    title: "Your Unshakeable Strength",
-    description: "I admire the way you face every challenge. You are the strongest person I know, and you inspire me, naii.",
+    title: "APAAA YA",
+    description: "UMMMMMMMMMMMM, mari ingatt2 orangnya pantang menyerah ga sihhhhh? aku suka deh sisimu ituu, yaa aku berharap kamu selalu tetap positiff",
   },
   // {
   //   bgColor: "bg-sky-300",
@@ -30,17 +30,17 @@ const specialThings = [
   // },
   {
     bgColor: "bg-fuchsia-300",
-    title: "Your Endless Patience (Especially With Me! gatauu sih, tapi mungkin ajaa :3)",
-    description: "Kamu tuh ramah banget sampai rela ngeladeni aku yang banyak cakap ini, serius dah naii, aku pikir aku bakalan kena block lhoo akwkwkkwkw",
+    title: "RAMAH KALI GATAU DAH mungkin iya",
+    description: "GIMANAA YAA, akuu gatau ini kau hanya gabut aja apa gimanaa??? tapi aku senang bisa ngobrol amamu berjam2 yaa walaupun emang ga boleh berharap apaa2",
   },
   {
     bgColor: "bg-orange-300",
     title: "The Way You Make Me Feel",
-    description: "Saat aku ngobrol amamuu, aku sebenarnya ngerasa bisa nyeritai semuanya ke kamuu. You feel like home. Tapii kadang aku takut kamu risihhh.",
+    description: "Saat aku ngobrol amamuu, aku sebenarnya ngerasa bisa nyeritai semuanya ke kamuu. You feel like home. Tapii kadang aku takut kamu risihhh apalagi setelah hmmmmmm, dan apalagi ada kating2 tuhh.",
   },
 ];
 
-const CarouselForNaila = () => {
+const CarouselForAldea = () => {
   const [api, setApi] = React.useState<CarouselApi>()
   const [current, setCurrent] = React.useState(0)
   const [count, setCount] = React.useState(0)
@@ -70,7 +70,7 @@ const CarouselForNaila = () => {
           </span>
           about
           <span className="bg-emerald-400 text-black px-3 py-1 ml-2 sm:ml-3 border-4 border-black shadow-[4px_4px_0px_black] transform rotate-1 inline-block">
-            Naila
+            Aldea
           </span>
         </h1>
       </Card>
@@ -110,4 +110,4 @@ const CarouselForNaila = () => {
   )
 }
 
-export default CarouselForNaila
+export default CarouselForAldea

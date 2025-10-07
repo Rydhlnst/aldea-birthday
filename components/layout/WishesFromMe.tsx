@@ -15,12 +15,12 @@ export default function WishesFromMe() {
                 </span>
                 for
                 <span className="bg-red-400 text-black px-3 py-1 ml-3 border-4 border-black shadow-[4px_4px_0px_black] transform rotate-1 inline-block">
-                Naila
+                Aldea
                 </span>
             </h1>
 
             <p className="text-lg font-bold max-w-md">
-                Sedikit kata dari hati, tapi semoga membawa banyak senyum di harimu, Naii.
+                Sedikit kata dari hati terdalam nii, jangan nyakiti orang lain awokwkkwkwkwkwkkwkw, dahla marah nanti.
             </p>
             </div>
 
@@ -28,11 +28,11 @@ export default function WishesFromMe() {
             <div className="w-full h-full flex items-center justify-center">
             <div className="bg-pink-300 border-4 border-black shadow-[4px_4px_0px_black] p-6 w-full md:w-[90%] rounded-none">
                 <p className="text-lg md:text-xl font-semibold leading-relaxed">
-                Hai Naila,  
+                Hai Aldea,  
                 Semoga ulang tahunmu penuh <span className="bg-purple-400 text-black px-3 py-1 mx-1 border-4 border-black shadow-[4px_4px_0px_black] transform -rotate-1 inline-block">
                 tawa
                 </span>, kebahagiaan, dan segala hal baik yang kamu impikan!  
-                Tetaplah menjadi pribadi yang hangat dan menginspirasi.
+                Tetaplah menjadi pribadi yang hangat dan menginspirasi. duh GPT kali yaa xD, semogaa kamu selalu jadi orang positif dah
                 </p>
             </div>
             </div>

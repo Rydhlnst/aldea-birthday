@@ -1,6 +1,6 @@
 import React from 'react'
 
-const HappyBirthdayNaila = () => {
+const HappyBirthdayAldea = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const HappyBirthdayNaila = () => {
   )
 }
 
-export default HappyBirthdayNaila
+export default HappyBirthdayAldea

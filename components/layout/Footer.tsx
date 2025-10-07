@@ -33,7 +33,7 @@ export default function FooterSection() {
         {/* --- Copyright diubah menjadi ucapan penutup yang hangat --- */}
         <div className="mt-10 text-sm text-muted-foreground space-y-1">
           <p>
-            Selamat ulang tahun yang ke-19, Naila!
+            Selamat ulang tahun yang ke-19, Aldea!
           </p>
           <p className="font-semibold">
             Semoga semua do&apos;a dan harapan baikmu terwujud.

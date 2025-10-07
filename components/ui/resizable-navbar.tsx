@@ -237,7 +237,7 @@ export const NavbarLogo = () => {
       href="#"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
-      <h1>Naila</h1>
+      <h1>Aldea</h1>
     </Link>
   );
 };

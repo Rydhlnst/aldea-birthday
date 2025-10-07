@@ -21,7 +21,7 @@ const handleAnimationComplete = () => {
                         Hai
                     </span> agen
                     <span className="bg-sky-400 text-black px-3 py-1 mx-2 sm:mx-3 border-4 border-black shadow-[4px_4px_0px_black] transform rotate-5 md:rotate-3 inline-block">
-                        naila
+                        Aldea
                     </span>
                     <span className="bg-yellow-400 text-black px-3 py-1 mx-2 sm:mx-3 border-4 border-black shadow-[4px_4px_0px_black] transform -rotate-5 md:-rotate-3 inline-block">
                         misi kamu
