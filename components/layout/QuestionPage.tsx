@@ -58,7 +58,7 @@ const questions = [
   {
     question: "Kapan pertama kali kita saling confess?",
     type: "input",
-    correctAnswer: "12 Desember 2021"
+    correctAnswer: "15 Desember 2021"
   }
 ];
 
